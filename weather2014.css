@@ -1,0 +1,335 @@
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+.b-content.weather2014{
+	font-size: 14px;
+	width: 47.4%;
+	padding: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.b-content.weather2014 .fleft{
+	float: left;
+}
+
+.b-content.weather2014 .fright{
+	float: right;
+}
+
+.b-content.weather2014 .b-match{
+}
+
+.b-content.weather2014 .b-match_panel .b-match_now{
+	float: left;
+	width: 46%;
+}
+.b-content.weather2014 .b-match_panel .b-match_day{
+	width: 27%;
+	float: left;
+}
+.b-content.weather2014 .b-match_panel .b-match_night{
+	float: left;
+	width: 27%;
+}
+
+
+
+
+.b-content.weather2014 .b-match_panel{
+	color: #fff;
+}
+
+.b-match_title{
+	color: #fff;
+	line-height: 28px;
+	font-weight: bold;
+	font-size: 24px;
+}
+.b-match_panel{
+
+}
+.b-match_inner{
+	padding: 25px 2%;
+}
+  .b-match_now{
+  	padding-top: 15px;
+  	font-size: 16px;
+
+  }
+    .b-match_now_header{
+
+    }
+    .b-match_now_body{
+    	position: relative;
+		padding-left: 45%;
+    }
+    .b-match_now_body:after{
+    	background: url(weather_src/now_img.png) no-repeat;
+      	content: "";
+      	display: block;
+      	position: absolute;
+      	width: 100px;
+      	height: 82px;
+      	left: 10px;
+      	top: 10px;
+    }
+      .b-match_now_value{
+      	font-size: 54px;
+      	line-height: 65px;
+      	font-weight: bold;
+      }
+      .b-match_now_value sup{
+		font-size: 30px;
+		top: -24px;
+		left: -12px;
+      }
+      .b-match_now_text{
+
+      }
+  .b-match_day{
+	padding-top: 44px;
+	font-size: 16px;
+  }
+    .b-match_day_header{
+
+    }
+    .b-match_day_body{
+    	position: relative;
+    	padding-top: 12px;
+    	padding-left: 50px;
+    }
+    .b-match_day_body:after{
+    	top: 6px;
+    	left:-6px;
+    	position: absolute;
+      	width: 50px;
+    	height: 50px;
+    	content: "";
+    	display: block;
+    	background: url(weather_src/now_day.png) center center no-repeat;
+    }
+
+      .b-match_day_value{
+      	padding-bottom: 4px;
+      	font-size: 32px;
+      	line-height: 32px;
+
+      }
+      .b-match_day_text{
+      	font-size: 13px;
+      }
+  .b-match_night{
+	padding-top: 44px;
+	font-size: 16px;
+  }
+    .b-match_night_header{
+
+    }
+    .b-match_night_body{
+    	position: relative;
+    	padding-top: 12px;
+    	padding-left: 50px;
+    }
+    .b-match_night_body:after{
+
+    	top: 6px;
+    	left:-6px;
+    	position: absolute;
+      	width: 50px;
+    	height: 50px;
+    	content: "";
+    	display: block;
+    	background: url(weather_src/now_night.png) center center no-repeat;
+    }
+      .b-match_night_value{
+      	padding-bottom: 4px;
+      	font-size: 32px;
+      	line-height: 32px;
+
+      }
+      .b-match_night_text{
+      	font-size: 13px;
+      }
+.b-match_params{
+	color: #fff;
+	margin-top: 40px;
+	padding-top: 10px;
+	border-top: 1px solid rgba(255, 255, 255, 0.45); 
+}
+	.b-match_param{
+		fill: #fff;
+		margin-top: 12px;
+	}
+	.b-match_param img{
+		margin-right: 5px;
+	}
+  .b-match_param_l{
+  	width: 50%;
+  	float: left;
+
+  }
+  .b-match_param_r{
+	width: 50%;
+  	float: left;
+  }
+
+.b-match_wday{
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+	width: 25%;
+	padding-left: 4%;
+	padding-right: 2%;
+	padding-bottom: 15px;
+	float: left;
+	padding-top: 18px;
+	border-bottom: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
+}
+  .b-match_wday_ofweek{
+  	font-size: 14px;
+	font-weight: bold;
+  }
+  .b-match_wday_ofweek.end{
+	color: #ed008c;
+  }
+  .b-match_wday_calendar{
+  	font-size: 16px;
+  }
+  .b-match_wday_temperature{
+  	padding: 5px 0 10px 50px;
+  	position: relative;
+  }
+  .b-match_wday_temperature:after{
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+  	background: url(weather_src/weather.png) no-repeat;
+  }
+      .b-match_wday_temperature sup{}
+
+    .b-match_wday_temperature_max{
+    	font-weight: bold;
+    }
+    .b-match_wday_temperature_min{color: #808080;}
+  .b-match_wday_text{
+  	font-weight: bold;
+  	height: 57px;
+  	overflow: hidden;
+  }
+  .b-match_wday_p{
+  	padding-bottom: 3px;
+  }
+
+.icon_big_p1:after{background-position: 0px 0px;}
+.icon_big_p2:after{}
+.icon_big_p3:after{}
+.icon_big_p4:after{}
+.icon_big_p5:after{}
+.icon_big_p6:after{}
+.icon_big_p7:after{}
+.icon_big_p8:after{}
+.icon_big_p9:after{}
+.icon_big_p10:after{}
+.icon_big_p11:after{}
+.icon_big_p12:after{}
+.icon_big_p13:after{}
+.icon_big_p14:after{}
+.icon_big_p15:after{}
+.icon_big_p16:after{}
+.icon_big_p17:after{}
+.icon_big_p18:after{}
+
+.icon_small_p1:after{background-position: 0 0;}
+.icon_small_p2:after{background-position: -54px 0;}
+.icon_small_p3:after{background-position: -108px 0;}
+.icon_small_p4:after{background-position: -162px 0;}
+.icon_small_p5:after{background-position: -216px 0;}
+.icon_small_p6:after{background-position: -270px 0;}
+
+.icon_small_p7:after{background-position: 0 -54px;}
+.icon_small_p8:after{background-position: -54px -54px;}
+.icon_small_p9:after{background-position: -108px -54px;}
+.icon_small_p10:after{background-position: -162px -54px;}
+.icon_small_p11:after{background-position: -216px -54px;}
+.icon_small_p12:after{background-position: -270px -54px;}
+
+
+.icon_small_p13:after{background-position: 0 -108px;}
+.icon_small_p14:after{background-position: -54px -108px;}
+.icon_small_p15:after{background-position: -108px -108px;}
+.icon_small_p16:after{background-position: -162px -108px;}
+.icon_small_p17:after{background-position: -216px -108px;}
+.icon_small_p18:after{background-position: -270px -108px;}
+
+
+.b-match_graph{
+	padding: 0 2%;
+}
+
+.b-match_map h3{
+  padding: 0 2%;
+}
+
+#graph_wrapper{
+  width: 100%;
+  height: 300px;
+}
+
+.b-content__content{
+	padding: 0 2%;
+}
+
+@media (max-width: 640px){
+
+	.b-content.weather2014 .b-match_panel .b-match_now{
+		width: 40%;
+	}
+	.b-content.weather2014 .b-match_panel .b-match_day{
+		width: 30%;
+	}
+	.b-content.weather2014 .b-match_panel .b-match_night{
+		width: 30%;
+	}
+
+	.b-match_wday{
+		width: 33%;
+		padding-left: 3%;
+		padding-right: 2%;
+	}
+
+	.b-match_param_r,
+	.b-match_param_l{
+		float: none;
+		width: 100%;
+	}
+
+    .b-match_now_body{
+		padding-left: 30%;
+    }
+    .b-match_now_body:after{
+    	background: url(weather_src/now_img_small.png);
+		width: 43px;
+		height: 36px;
+    }
+
+	.b-content.weather2014 {
+		width: 100% !important;
+	}
+
+	.b-match_now_value{
+		font-size: 45px;
+		line-height: 65px;
+		font-weight: bold;
+	}
+}
